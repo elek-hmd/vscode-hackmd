@@ -1,12 +1,13 @@
 # The official HackMD Markdown VSCode extension
 
-Use the same [HackMD](https://hackmd.io) markdown right in VSCode!
+View [HackMD](https://hackmd.io) notes right in VSCode and edit those in your My Workspace.
 
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/HackMD.vscode-hackmd)
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/HackMD.vscode-hackmd)
 
 ## Features
 
+- **New**: Edit notes in VSCode (currently limited to notes in My Workspace only)
 - **New**: Preview your HackMD notes in VSCode
 - **New**: Create note from editor content
 - HackMD-compatible markdown rendering preview
@@ -31,6 +32,20 @@ Use the same [HackMD](https://hackmd.io) markdown right in VSCode!
 [Read the full Release Note on HackMD.][release-notes]
 
 [release-notes]: https://bit.ly/2VXRTrq
+
+## How to activate this extension
+
+1. Install the extension from VSCode Marketplace.
+2. Generate an API token for the extension in HackMD and copy it. [Here's how][generate-api-token].
+3. Activate the extension from the command palette and paste the token into VSCode when prompted.
+
+[generate-api-token]: https://hackmd.io/@hackmd-api/developer-portal/https%3A%2F%2Fhackmd.io%2F%40hackmd-api%2Fhow-to-issue-an-api-token
+
+## About API call limit
+
+Operations performed by VSCode extension use API calls, which is counted against a [limit](hackmd-pricing) according to the plan you are subscribing to. You will get notification in status bar when you are about to use up the calls.
+
+[hackmd-pricing]: https://hackmd.io/pricing
 
 ### 2.0.0
 
